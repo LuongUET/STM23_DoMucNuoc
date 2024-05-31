@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pump_dc\startup_stm32f103xb.o"
+"pump_dc\main.o"
+"pump_dc\stm32f1xx_it.o"
+"pump_dc\stm32f1xx_hal_msp.o"
+"pump_dc\dwt_delay.o"
+"pump_dc\config_clock.o"
+"pump_dc\stm32f1xx_hal_gpio_ex.o"
+"pump_dc\stm32f1xx_hal_tim_ex.o"
+"pump_dc\stm32f1xx_hal_tim.o"
+"pump_dc\stm32f1xx_hal.o"
+"pump_dc\stm32f1xx_hal_rcc.o"
+"pump_dc\stm32f1xx_hal_rcc_ex.o"
+"pump_dc\stm32f1xx_hal_gpio.o"
+"pump_dc\stm32f1xx_hal_dma.o"
+"pump_dc\stm32f1xx_hal_cortex.o"
+"pump_dc\stm32f1xx_hal_pwr.o"
+"pump_dc\stm32f1xx_hal_flash.o"
+"pump_dc\stm32f1xx_hal_flash_ex.o"
+"pump_dc\stm32f1xx_hal_exti.o"
+"pump_dc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "pump_DC\pump_DC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pump_DC.map" -o pump_DC\pump_DC.axf
